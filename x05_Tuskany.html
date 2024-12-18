@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+	<title>A Taste of Tuskany</title>
+	<meta charset="utf-8"/>
+	<link type="text/css" rel="stylesheet" href="x05_Tuskany.css" />
+	<script type="text/javascript">
+	let specialsOpen = false;
+	function specialToggle(elem) {
+		if (specialsOpen == false) {
+			elem.style.display="block";
+			specialsOpen = true;}
+		else {
+			elem.style.display="none";
+			specialsOpen = false;}
+}
+
+	</script>
+</head>
+<body>
+
+	<article>
+	<h1>A Taste of Tuskany</h1>
+	<h2>Italian Restaurant<br/></h2>
+	<p>234 Arezzo Avenue<br/>Sherwood Park<br/><br/>
+
+	<img class="spaghetti"src="https://upload.wikimedia.org/wikipedia/commons/7/73/Spaghetti_and_meatballs.jpg"
+  alt="Meatballs, provided by Yamaguchi先生 under the GNU Free Documentation License" title="Meatballs under GNU Free Documentation License by Yamaguchi先生 (image not useable unless author named)"/><br/><br/></p>
+	<ul>
+		<li>Fine Italian Dining</li>
+		<li><u><a onclick = "specialToggle(document.getElementById('specials'))">Daily Specials</a></u></li>
+		<li>Licensed</li>
+		<li>Banquet Room</li>
+		<li>Open Daily Until 11pm</li>
+		<li>Eat In, Take Out, Delivery</li>
+		<li>Call 780-555-1234</li>
+	</ul>
+	</article>
+
+	<article id="specials" class="specialstyle">
+
+	<h1><i>Today's Special</i></h1>
+	<h2><i>Valigette</i> (Beef Rolls)<br/>$12.95<br/><br/>
+	<img class="smallspaghetti"src="https://upload.wikimedia.org/wikipedia/commons/9/98/Spaghetti-prepared.jpg"
+  alt="spaghetti" title="Spaghetti under Public Domain"/><br/></h2>
+	<p>Includes any <i>two</i> of:</p>
+	<ol>
+		<li>Pasta e Fagioli</li>
+		<li>Ravioli Nudi</li>
+		<li>Fettunta</li>
+		<li>Crostini con Salsiccia</li>
+		<li>Ribollita</li>
+	</ol>
+	<p><u><a onclick = "specialToggle(document.getElementById('specials'))">Close</a></u></p>
+	</article>
+</body>
